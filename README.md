@@ -1,10 +1,10 @@
-# ✨ JEDI: João's Exploratory Data Insight
+# ✨ ELO: Explorador Leve de Observações
 
 ## 🚀 Visão Geral do Projeto
 
-Bem-vindo ao **JEDI: João's Exploratory Data Insight**! Este sistema inovador transforma a maneira como você interage com seus dados. Utilizando o poder dos Grandes Modelos de Linguagem (LLMs) e agentes inteligentes, o JEDI permite que você realize Análise Exploratória de Dados (EDA) em arquivos CSV através de uma interface de chat intuitiva.
+Bem-vindo ao **ELO: Explorador Leve de Observações**! Este sistema inovador transforma a maneira como você interage com seus dados. Utilizando o poder dos Grandes Modelos de Linguagem (LLMs) e agentes inteligentes, o ELO permite que você realize Análise Exploratória de Dados (EDA) em arquivos CSV através de uma interface de chat intuitiva.
 
-Com o JEDI, você pode:
+Com o ELO, você pode:
 *   **Conversar com seus Dados:** Faça perguntas em linguagem natural e obtenha respostas, insights e resumos.
 *   **Visualizações Gráficas:** Solicite a criação de gráficos para visualizar tendências e padrões.
 *   **Escolha de LLM:** Selecione entre modelos locais (Ollama) ou da nuvem (Google Gemini) para suas análises.
@@ -26,7 +26,7 @@ Prepare-se para dominar a Força dos Dados e desvendar os segredos escondidos em
 
 ## 📂 Estrutura do Projeto
 
-O projeto JEDI é modularizado para facilitar a manutenção e expansão:
+O projeto ELO é modularizado para facilitar a manutenção e expansão:
 
 ```
 .
@@ -55,10 +55,10 @@ O projeto JEDI é modularizado para facilitar a manutenção e expansão:
 
 ### Instalação
 
-1.  **Clone o repositório:**
+1.  **Clone o repositório: (Original)**
     ```bash
-    git clone https://github.com/jpscard/JEDI.git
-    cd JEDI
+    git clone https://github.com/jpscard/ELO.git
+    cd ELO
     ```
 
 2.  **Crie e ative um ambiente virtual (recomendado):**
@@ -103,12 +103,6 @@ O projeto JEDI é modularizado para facilitar a manutenção e expansão:
 
 *   **Tema:** Edite o arquivo `.streamlit/config.toml` para ajustar cores, fontes e outros aspectos visuais.
 *   **Logo:** Substitua o arquivo `asset/LOGO.png` pela sua própria imagem.
-
-## 👨‍💻 Desenvolvedor
-
-**João Paulo Cardoso**
-*   **LinkedIn:** [https://www.linkedin.com/in/joao-paulo-cardoso/](https://www.linkedin.com/in/joao-paulo-cardoso/)
-*   **GitHub do Projeto:** [https://github.com/jpscard/JEDI](https://github.com/jpscard/JEDI)
 
 ---
 *Gerado com a ajuda de um assistente de IA.*
