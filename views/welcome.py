@@ -11,9 +11,9 @@ def welcome_screen():
     if os.path.exists(logo_path):
         with open(logo_path, "rb") as f:
             data = base64.b64encode(f.read()).decode("utf-8")
-        st.markdown(f"<div style='text-align: center'><img src='data:image/png;base64,{data}' width='200'></div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center'><img src='data:image/png;base64,{data}' width='300'></div>", unsafe_allow_html=True)
 
-    st.markdown("<h1 style='text-align: center;'>Bem-vindo ao JEDI: João's Exploratory Data Insight!</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Bem-vindo ao ELO: Explorador Leve de Observações!</h1>", unsafe_allow_html=True)
 
     st.markdown(" ") # Espaçamento
 
@@ -27,9 +27,9 @@ def welcome_screen():
 
     with st.expander("🎯 Sobre o Projeto (Clique para expandir)"):
         st.write("""
-        Bem-vindo ao **JEDI: João's Exploratory Data Insight**! 🚀
-        Aqui, você se tornará um verdadeiro Mestre Jedi na arte da análise de dados. Este sistema utiliza o poder da Inteligência Artificial e de agentes autônomos para desvendar os segredos escondidos em seus arquivos CSV.
-        Com o JEDI, você pode 'conversar' com seus dados em linguagem natural, obtendo insights profundos, resumos detalhados e visualizações gráficas impressionantes. Prepare-se para dominar a Força dos Dados!
+        Bem-vindo ao **ELO: Explorador Leve de Observações**! 🚀
+        Este sistema utiliza o poder da Inteligência Artificial e de agentes autônomos para desvendar os segredos escondidos em seus arquivos CSV.
+        Com o ELO, você pode 'conversar' com seus dados em linguagem natural, obtendo insights profundos, resumos detalhados e visualizações gráficas impressionantes. Prepare-se para dominar a Força dos Dados!
         """)
 
     st.markdown(" ") # Espaçamento
@@ -66,7 +66,6 @@ def welcome_screen():
     
     # Seção de Identificação do Desenvolvedor
     st.markdown("<h3 style='text-align: center;'>Desenvolvido por</h3>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'>João Paulo Cardoso</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'>LinkedIn: <a href='https://www.linkedin.com/in/joao-paulo-cardoso/' target='_blank'>linkedin.com/in/joao-paulo-cardoso/</a></p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'>GitHub do Projeto: <a href='https://github.com/jpscard/JEDI' target='_blank'>github.com/jpscard/JEDI</a></p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center;'>FCA</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center;'>GitHub do Projeto: <a href='https://github.com/abnersimoessete/elo' target='_blank'>https://github.com/abnersimoessete/elo</a></p>", unsafe_allow_html=True)
     

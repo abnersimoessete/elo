@@ -22,7 +22,7 @@ from utils import (
 def generate_docx_report(pinned_items, user_name):
     """Gera um relatório DOCX a partir dos itens pinados."""
     doc = docx.Document()
-    doc.add_heading('Relatório JEDI', 0)
+    doc.add_heading('Relatório ELO', 0)
     doc.add_paragraph(f"Gerado por: {user_name}")
     doc.add_paragraph(f"Data: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     doc.add_paragraph("---_---")
@@ -147,7 +147,7 @@ def main_app():
             st.download_button(
                 label="Download Relatório (.docx)",
                 data=docx_data,
-                file_name=f"relatorio_jedi_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.docx",
+                file_name=f"relatorio_elo_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                 use_container_width=True
             )
@@ -182,7 +182,7 @@ def main_app():
                             _pin_item(message)
                             st.rerun()
 
-            if prompt := st.chat_input(f"{st.session_state.get('user_name', 'Usuário')}: Pergunte ao JEDI sobre os dados..."):
+            if prompt := st.chat_input(f"{st.session_state.get('user_name', 'Usuário')}: Pergunte ao ELO sobre os dados..."):
                 st.session_state.messages.append({"role": "user", "content": prompt, "timestamp": datetime.datetime.now().isoformat()})
                 with st.chat_message("user"):
                     st.markdown(prompt)
